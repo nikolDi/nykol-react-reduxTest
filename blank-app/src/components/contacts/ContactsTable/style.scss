@@ -1,0 +1,30 @@
+
+.table__main {
+    min-width: 94vw;
+}
+.table__avatar-image {
+    border-radius: 50%;
+}
+.table__name-block {
+    a:link {
+        font-weight: 600;
+    }
+}
+.table__email-block {
+    display: flex;
+    span {
+        margin-right: .5rem;
+    }
+}
+.table__location-block {
+    display: flex;
+    flex-direction: column;
+
+    span:first-child {
+        font-weight: 600;
+    }
+}
+.table__nat-block {
+    display: flex;
+    justify-content: flex-end;
+}

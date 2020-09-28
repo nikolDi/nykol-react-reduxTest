@@ -1,0 +1,20 @@
+.staistic {
+    background-color: #fff;
+    padding: 2rem;
+    h3 {
+        font-size: 1.5rem;
+    }
+    &__block-info {
+        margin-top: 1rem;
+    }
+}
+.staistic__nat {
+    margin-top: 2rem;
+    width: 100%;
+    h4 {
+        font-size: 1.2rem;
+    }
+}
+.staistic__nat--item-title {
+    font-weight: 700;
+}

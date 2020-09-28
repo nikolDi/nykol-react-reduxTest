@@ -1,0 +1,20 @@
+@import '../../../assets/styles/variables';
+.filter__block {
+    padding: 1rem;
+    background-color: $color-white;
+    margin: 1rem 0;
+
+    form {
+        width: 100%;
+
+        input, select {
+            min-width: 5rem;
+        }
+        .form-row {
+            align-items: center;
+        }
+    }
+    .ant-form-item {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,9 @@
+.view__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    &-reload {
+        margin-right: 1rem;
+    }
+}

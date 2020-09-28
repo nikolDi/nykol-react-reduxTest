@@ -1,0 +1,1 @@
+export { ContactsDetailCard } from './container';

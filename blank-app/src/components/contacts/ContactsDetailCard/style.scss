@@ -1,0 +1,41 @@
+.details__header {
+    margin: 2rem auto;
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.details__image--block {
+    min-width: 20rem;
+    max-width: 30rem;
+    
+    img {
+        width: 100%;
+    };
+}
+
+.details__content--info {
+    &-name {
+        display: flex;
+        align-items: center;
+        h2 {
+            margin: 0;
+        }
+        span {
+            font-size: 1rem;
+            &:not(:first-child) {
+                margin-left: 1rem;
+            }
+        }
+    }
+    &-text {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5;
+    }
+    &-address {
+        display: flex;
+    }
+}

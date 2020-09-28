@@ -1,0 +1,19 @@
+.pageContacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.page__header {
+    max-width: 100%;
+}
+.page__header--title {
+    font-size: var(--font-title-primary);
+}
+
+.page__body {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

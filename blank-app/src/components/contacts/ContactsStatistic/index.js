@@ -1,0 +1,1 @@
+export { ContactsStatistic } from './container';

@@ -1,0 +1,9 @@
+//  Address format
+.address__block {
+    display: flex;
+    flex-direction: column;
+
+    &-country {
+        font-weight: 600;
+    }
+}

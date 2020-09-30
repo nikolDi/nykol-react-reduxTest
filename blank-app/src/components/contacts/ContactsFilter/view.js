@@ -12,6 +12,7 @@ const View = ({ contactsData, changeUserData, tempUserData, setLoading }) => {
 	const [log, setLog] = useState(null);
 
 	const { Option } = Select;
+	const [ form ] = Form.useForm();
 
 	const filterDataHandler = () => {
 		// Simulate Data loading
@@ -135,16 +136,17 @@ const View = ({ contactsData, changeUserData, tempUserData, setLoading }) => {
 		setNameVal("");
 		setGenderVal("");
 		setNationalityVal([]);
+		form.resetFields();
 		changeUserData(contactsData);
 	};
 
 	return (
 		<div className={"filter__block"}>
-			<Form className="ant-advanced-search-form">
+			<Form form={form} className="ant-advanced-search-form">
 				<Row gutter={[16, 14]} className={"form-row"}>
 					<Col
 						className="gutter-row"
-						xs={{ span: 24, offset: 0 }}
+						xs={{ span: 24 }}
 						md={{ span: 16 }}
 						xl={{ span: 6 }}
 						xxl={{ span: 8 }}
@@ -153,7 +155,7 @@ const View = ({ contactsData, changeUserData, tempUserData, setLoading }) => {
 					</Col>
 					<Col
 						className="gutter-row"
-						xs={{ span: 24, offset: 0 }}
+						xs={{ span: 24 }}
 						md={{ span: 8 }}
 						xl={{ span: 4 }}
 						xxl={{ span: 3 }}
@@ -169,7 +171,7 @@ const View = ({ contactsData, changeUserData, tempUserData, setLoading }) => {
 					>
 						{nationalityInput}
 					</Col>
-					<Col className="gutter-row" span={3}>
+					<Col className="gutter-row" xs={{ span: 12 }} md={{ span: 4 }}>
 						<Checkbox onChange={creatorChangeHandler}>
 							I am creator
 						</Checkbox>
